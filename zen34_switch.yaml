@@ -79,6 +79,8 @@ mode: single
 trigger:
   - platform: event
     event_type: zwave.scene_activated
+    event_data: 
+      entity_id: !input zwave_entity
 
 variables:
   logger: blueprint.zwave_scene_activation
